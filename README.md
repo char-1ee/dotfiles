@@ -41,6 +41,6 @@ Then manual symlinking is needed. I will come up with a installation script soon
 - vim files
 - etc.
 
-## Lisense 
+## License 
 
 Copyright (c) 2021 Li Xingjian. Released under the MIT License. See [LICENSE.md](https://github.com/anishathalye/dotfiles/blob/master/LICENSE.md) for details.
