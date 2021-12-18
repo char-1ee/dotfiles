@@ -1,0 +1,50 @@
+#!/user/bin/env bash
+
+# Color in coreutils utilities output
+alias ls="ls --color=auto"
+alias grep="grep --color"
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# ls alias
+alias l="ls -CF"
+alias ll="ls -lahF"  # detailed list all
+alias la="ls -A"    # list ignored entries starting with .
+alias lla="la -l"   # la using a long listing format
+
+# git alias
+alias g="git"
+alias gs="git status"
+alias gc="git commit -m"
+alias ga="git add ."
+alias gb="git branch"
+
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+
+# Linux navigations
+alias dt="cd ~/Desktop"
+alias dl="cd ~/Desktop"
+
+# wsl navigations
+alias mntc="cd /mnt/c"
+alias mntd="cd /mnt/d"
+alias work="cd /mnt/d/Code | la"   # current workspace
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Aliaes to protect against overwriting
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Print each PATH entry on a seperate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Miscellaneous
+alias quit='exit'
+
