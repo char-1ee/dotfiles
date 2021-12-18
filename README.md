@@ -1,8 +1,8 @@
 # dotfiles
 
-My customized dotfiles run on Linux and Windows Subsystem for Linux.
+My dotfiles run on Linux and Windows Subsystem for Linux.
 
-Because of my preference for a Unix-like environment, I will continuously upadte my dotfiles. 
+These dotfiles are simple and immature and I will keep update. Refer to [TODOs](#TODOs) 
 
 ## Structure
 
