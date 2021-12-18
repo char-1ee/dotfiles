@@ -13,6 +13,7 @@
 # Folder view configuration files
 .DS_Store
 Desktop.ini
+Icon?
 
 # Personal IDE config files
 .idea/workspace.xml
@@ -25,7 +26,14 @@ Desktop.ini
 # Thumbnail cache files
 ._*
 Thumbs.db
+ehthumbs.db
 
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Logs
+*.log
+
+# Editor files
+.vscode

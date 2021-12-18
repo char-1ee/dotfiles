@@ -4,4 +4,4 @@
 - .zshrc
 - .gitconfig
 - .inputrc
--
+- etc.

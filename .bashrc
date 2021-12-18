@@ -15,7 +15,7 @@ elif [ -f /etc/bash.bashrc ]; then
 fi
 
 # Load the dotfiles
-for file in ~/.{path,funtions,env,alias}; do
+for file in ~/bash.{path,funtions,env,alias}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
