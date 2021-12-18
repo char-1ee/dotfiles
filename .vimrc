@@ -1,5 +1,13 @@
+" Use Solarized Dark mode
+set background=Dark
+colorscheme solarized
+let g:solarized_termtrans=1
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
+
+" Use OS-defualt clipboard
+set clipboard=unnamed
 
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
@@ -17,10 +25,10 @@ syntax on
 set number
 
 " Highlight cursor line underneath the cursor horizontally.
-#set cursorline
+set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
-#set cursorcolumn
+set cursorcolumn
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
@@ -70,3 +78,17 @@ set wildmenu
 
 " Make wildmenu behave like similar to Bash completion.
 set wildmode=list:longest
+
+" Don't add empty newlines at the end of files
+set binary
+set noeol
+
+" Strip trailing whitespace (,ss)
+function! StripWhitespace()
+	let save_cursor = getpos(".")
+	let old_query = getreg('/')
+	:%s/\s\+$//e
+	call setpos('.', save_cursor)
+	call setreg('/', old_query)
+endfunction
+noremap <leader>ss :call StripWhitespace()<CR>
