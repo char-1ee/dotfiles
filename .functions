@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+# Open man page as PDF
+function manpdf() {
+    man -t "${1}" | open -f -a /Applications/Preview.app/
+}
+
+# Add to path
+function addpath() {
+    [ -d $1 ] && PATH="$1:$PATH"
+}
+
+# Noramlize `open` across platforms
+if grep -q Microsoft /proc/version; then
+
+    # Ubuntu on Windows using the Linux subsystem
+    alias open='explorer.exe';
+else
+    alias open='xdg-open';
+fi
+
+# `o` with no arguments opens the current directory, otherwise opens the given location
+function o() {
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open "$@";
+	fi;
+}
+
+# Calculator
+function calc() {
+    echo "$*" | bc -l;
+}
