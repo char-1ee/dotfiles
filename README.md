@@ -1,8 +1,8 @@
 # dotfiles
 
-My customized dotfiles run on Linux and Windows Subsystem for Linux.
+My dotfiles run on Linux and Windows Subsystem for Linux.
 
-Because of my preference for a Unix-like environment, I will continuously upadte my dotfiles. 
+These dotfiles are simple and immature and I will keep update. Refer to [TODOs](#TODOs) 
 
 ## Structure
 
@@ -41,6 +41,6 @@ Then manual symlinking is needed. I will come up with a installation script soon
 - vim files
 - etc.
 
-## Lisense 
+## License 
 
 Copyright (c) 2021 Li Xingjian. Released under the MIT License. See [LICENSE.md](https://github.com/anishathalye/dotfiles/blob/master/LICENSE.md) for details.
