@@ -19,16 +19,9 @@ These dotfiles are simple and immature and I will keep update. Refer to [TODOs](
 |── vim
 │ └── .vimrc
 |── .bash_profile
-└── .bashrc
-```
+|── .bashrc
+└── .clang-format
 
-## Install
-
-To install the dotfiles on a new system, directly git clone this repo. 
-
-```shell
-git clone https://github.com/char-1ee/dotfiles.git 
-cd dotfiles
 ```
 
 Then manual symlinking is needed. I will come up with a installation script soon. 
