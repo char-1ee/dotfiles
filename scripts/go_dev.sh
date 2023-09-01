@@ -1,4 +1,5 @@
 #! /bin/bash
+# Installl needed softwares for personal golang developments
 
 sudo apt-get update
 
