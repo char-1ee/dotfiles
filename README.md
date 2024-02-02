@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # dotfiles
 
 My dotfiles run on Linux and Windows Subsystem for Linux.
